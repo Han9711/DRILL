@@ -19,18 +19,14 @@ def moveDown():
 def restart():
     turtle.reset()
 
-# set screen size 
-sc=turtle.Screen() 
-sc.setup(500,500)
-
 turtle.shape('turtle')
   
-# call methods 
+
 turtle.onkey(moveUp,'w') 
 turtle.onkey(moveRight,'d') 
 turtle.onkey(moveLeft,'a')
 turtle.onkey(moveDown, 's')
 turtle.onkey(restart, 'Escape')
   
-# to listen by the turtle 
+
 turtle.listen()
